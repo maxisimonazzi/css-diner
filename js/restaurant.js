@@ -578,7 +578,7 @@ function loadBoard(){
   $(".table *").addClass("pop");
 
 
-  $(".markup").html('<div>&ltdiv class="table"&gt' + markupHolder.html() + '&lt/div&gt</div>');
+  $(".markup").html('<div>&ltdiv class="mesa"&gt' + markupHolder.html() + '&lt/div&gt</div>');
 }
 
 // Adds nametags to the items on the table
@@ -630,7 +630,7 @@ function loadLevel(){
   loadBoard();
   resetTable();
 
-  $(".level-header .level-text").html("Level " + (currentLevel+1) + " of " + levels.length);
+  $(".level-header .level-text").html("Nivel " + (currentLevel+1) + " de " + levels.length);
 
   updateProgressUI(currentLevel, checkCompleted(currentLevel));
 
